@@ -65,6 +65,17 @@
             color: white;
             font-size: 24px;
             line-height: 35px;
+            margin-bottom: 40px;
+        }
+        a {
+            background-color: $lightRed; 
+            color: white;
+            display: inline-block;
+            width: 225px;
+            padding: 10px;
+            border-radius: 25px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
         }
     }
 

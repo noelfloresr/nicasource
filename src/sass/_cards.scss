@@ -1,0 +1,106 @@
+
+.how-it-works-cards{
+    .card-container {
+        margin-bottom: 30px;
+        
+        .card {
+            min-height: 240px;
+            padding: 15px;
+            border-radius: 5px;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: flex-end;
+            .card-content {
+                .badge {
+                    margin-bottom: 20px;
+                }
+                .title {
+                    line-height: 25px;
+                    color: white;
+                    margin-bottom: 20px;
+                    font-size: 20px;
+                }
+                .content {
+                    color: white;
+                }
+            }
+            
+        }
+        &:nth-child(1) {
+            .card {
+                background: 
+                    linear-gradient(
+                        rgba(0, 0, 0, 0.10), 
+                        rgba(0, 0, 0, 0.10)
+                    ),
+                    url('/images/Step1.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                
+            }
+        }
+        &:nth-child(2) {
+            .card {
+                background: 
+                    linear-gradient(
+                        rgba(0, 0, 0, 0.10), 
+                        rgba(0, 0, 0, 0.10)
+                    ),
+                    url('/images/Step2.jpg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+            }
+        }
+        &:nth-child(3) {
+            .card {
+                background: 
+                    linear-gradient(
+                        rgba(0, 0, 0, 0.10), 
+                        rgba(0, 0, 0, 0.10)
+                    ),
+                    url('/images/Step3.jpg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .how-it-works-cards{
+        .card-container {
+            .card {
+                min-height: 400px;
+                .card-content {
+                    .title {
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .how-it-works-cards{
+        .card-container {
+            .card {
+                min-height: 400px;
+                padding: 30px;
+            }
+        }
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+}
