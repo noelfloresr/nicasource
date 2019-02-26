@@ -7,3 +7,51 @@
     padding: 5px 10px;
     font-size: 14px;
 }
+
+.button {
+    background-color: $lightRed; 
+    border: 2px solid $lightRed;
+    color: white;
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    &:hover {
+        background-color: darken($lightRed, 10%);
+    }
+    &.no-background {
+        background: none;
+        color: $lightRed;
+        &:hover {
+            background-color: darken($lightRed, 10%);
+            color: white;
+        }
+    }
+}
+
+form {
+    input[type=text] {
+        height: 42px;
+        border-radius: 5px;
+        width: 100%;
+        border: 1px solid $brownishGrey;
+        color: $brownishGrey;
+        padding: 5px 10px;
+        @media (min-width: 768px) {
+            width: 300px;
+        }
+    }
+}
+
+hr{
+    border: 1px solid $lightRed;
+}
+
+@media (min-width: 576px) {
+    .button {
+        width: 225px;
+    }
+}

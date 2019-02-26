@@ -2,23 +2,16 @@
 .how-it-works-cards{
     .card-container {
         margin-bottom: 30px;
-        
         .card {
             min-height: 240px;
             padding: 15px;
             border-radius: 5px;
-            background-size: 100%;
-            background-repeat: no-repeat;
             display: flex;
             align-items: flex-end;
             .card-content {
-                .badge {
-                    margin-bottom: 20px;
-                }
                 .title {
                     line-height: 25px;
                     color: white;
-                    margin-bottom: 20px;
                     font-size: 20px;
                 }
                 .content {
@@ -37,7 +30,7 @@
                     url('/images/Step1.jpg');
                 background-repeat: no-repeat;
                 background-size: cover;
-                
+                background-position: center;
             }
         }
         &:nth-child(2) {
@@ -48,8 +41,9 @@
                         rgba(0, 0, 0, 0.10)
                     ),
                     url('/images/Step2.jpg');
-                    background-repeat: no-repeat;
-                    background-size: cover;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
             }
         }
         &:nth-child(3) {
@@ -60,16 +54,175 @@
                         rgba(0, 0, 0, 0.10)
                     ),
                     url('/images/Step3.jpg');
-                    background-repeat: no-repeat;
-                    background-size: cover;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
             }
         }
     }
 }
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
-    
+.meet-a-partner {
+    .card {
+        .card-image {
+            &:after {
+                font-family: "Font Awesome 5 Free"; 
+                font-weight: 900; 
+                color: white;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                font-size: 14px;
+                padding: 10px;
+                right: 37px;
+                position: relative;
+                bottom: 10.8px;
+            }
+        }
+        .card-content {
+            color: $brownishGrey;
+        }
+    }
+    .col-12 {
+        &:nth-child(1) {
+            .card-image {
+                &:after {
+                    content: "\f001";
+                    background-color: $lightRed;
+                }
+            }
+        }
+        &:nth-child(2) {
+            .card-image {
+                &:after {
+                    content: "\f1fc";
+                    background-color: $aqua;
+                }
+            }
+        }
+        &:nth-child(3) {
+            .card-image {
+                &:after {
+                    content: "\f030";
+                    background-color: $yellowishOrange
+                }
+            }
+        }
+        &:nth-child(4) {
+            .card-image {
+                &:after {
+                    content: "\f5b0";
+                    background-color: $cornFlower;
+                }
+            }
+        }
+    }
+}
+
+.discover-holiday-activity {
+    .card {
+        min-height: 120px;
+        display: flex;
+        align-items: center;
+        .card-title {
+            color: white;
+            padding: 0 15px;
+            width: 100%;
+        }
+    }
+    .col-12 {
+        &:nth-child(1) {
+            .card {
+                background: 
+                linear-gradient(
+                    rgba(0, 0, 0, 0.10), 
+                    rgba(0, 0, 0, 0.10)
+                ),
+                url('/images/sports.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: bottom;
+            }
+        }
+        &:nth-child(2) {
+            .card {
+                background: 
+                linear-gradient(
+                    rgba(0, 0, 0, 0.10), 
+                    rgba(0, 0, 0, 0.10)
+                ),
+                url('/images/wellness.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+        &:nth-child(3) {
+            .card {
+                background: 
+                linear-gradient(
+                    rgba(0, 0, 0, 0.10), 
+                    rgba(0, 0, 0, 0.10)
+                ),
+                url('/images/extreme.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: top;
+            }
+        }
+        &:nth-child(4) {
+            .card {
+                background: 
+                linear-gradient(
+                    rgba(0, 0, 0, 0.10), 
+                    rgba(0, 0, 0, 0.10)
+                ),
+                url('/images/games.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+        &:nth-child(5) {
+            .card {
+                background: 
+                linear-gradient(
+                    rgba(0, 0, 0, 0.10), 
+                    rgba(0, 0, 0, 0.10)
+                ),
+                url('/images/culture.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+        &:nth-child(6) {
+            .card {
+                background: 
+                linear-gradient(
+                    rgba(0, 0, 0, 0.10), 
+                    rgba(0, 0, 0, 0.10)
+                ),
+                url('/images/enjoyment.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+        &:nth-child(7) {
+            .card {
+                background: 
+                linear-gradient(
+                    rgba(0, 0, 0, 0.10), 
+                    rgba(0, 0, 0, 0.10)
+                ),
+                url('/images/traveling.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: top;
+            }
+        }
+    }
 }
 
 // Medium devices (tablets, 768px and up)
@@ -86,6 +239,11 @@
             }
         }
     }
+    .discover-holiday-activity {
+        .card {
+            min-height: 310px;
+        }
+    }
 }
 
 // Large devices (desktops, 992px and up)
@@ -98,9 +256,4 @@
             }
         }
     }
-}
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-
 }

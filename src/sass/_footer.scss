@@ -1,4 +1,18 @@
 
+footer {
+    .logo {
+        color: $lightRed;
+    }
+    nav {
+        margin-bottom: 15px;
+        a {
+            color: $brownishGrey;
+            display: block;
+            margin-bottom: 15px;
+        }
+    }
+}
+
 
 
 @media (min-width: 576px) {
